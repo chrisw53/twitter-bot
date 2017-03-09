@@ -1,5 +1,5 @@
 # What this is:
-A simple twitter bot that automatically retweet memes, engage in casual conversations (WIP) and occasionally tweet sassy tweets @POTUS (WIP).
+A simple twitter bot that automatically retweets memes, engages in casual conversations (WIP) and occasionally tweets sassy tweets @POTUS (WIP).
 
 # What you'll need:
 1. A twitter account
