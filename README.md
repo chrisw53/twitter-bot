@@ -1,12 +1,12 @@
 # What this is:
-A twitter bot that automatically retweet memes.
+A simple twitter bot that automatically retweet memes.
 
-# What we'll need:
+# What you'll need:
 1. A twitter account
 2. NPM
 3. Node JS
 
-# How to get started: 
+# How to start: 
 1. Download the source code and run `npm install` to grab the dependencies
 2. Register a twitter account with a mobile number and proceed to apps.twitter.com
 3. Create a new app, generate a pair of access token and secret.
