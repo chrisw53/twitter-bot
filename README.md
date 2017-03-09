@@ -1,5 +1,5 @@
 # What this is:
-A twitter bot that automatically retweet memes and eventually capable of engage in casual conversations via IBM Watson API
+A twitter bot that automatically retweet memes.
 
 # What we'll need:
 1. A twitter account
