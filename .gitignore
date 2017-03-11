@@ -1,3 +1,5 @@
 node_modules
 .vscode
-statics/clientSetupDev.js
+statics/twitterAPI_KEY_Dev.js
+statics/watsonAPI_KEY_Dev.js
+test.js

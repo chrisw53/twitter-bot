@@ -1,4 +1,4 @@
-var client = require('../statics/clientSetup');
+var twitter = require('../statics/twitterAPI_KEY');
 var TWITTER_SEARCH_PHRASE = require('../statics/query');
 
 var query = {
@@ -8,7 +8,7 @@ var query = {
 }
 
 module.exports = function botInit(retweet) {
-    client.get('search/tweets', query, botSearchInit);
+    twitter.get('search/tweets', query, botSearchInit);
 
     function botSearchInit(error, data, response) {
         if (error) {
@@ -19,7 +19,7 @@ module.exports = function botInit(retweet) {
                 id: data.statuses[0].id_str
             };
 
-            client.post('statuses/retweet/:id', id, botRetweetInit); 
+            twitter.post('statuses/retweet/:id', id, botRetweetInit); 
 
             function botRetweetInit(error, data, response) {
                 if (error) {
