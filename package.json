@@ -4,8 +4,10 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "request": "^2.81.0",
     "twit": "^2.2.5",
-    "watson-developer-cloud": "^2.25.1"
+    "watson-developer-cloud": "^2.25.1",
+    "weather-js": "^1.0.3"
   },
   "devDependencies": {},
   "scripts": {

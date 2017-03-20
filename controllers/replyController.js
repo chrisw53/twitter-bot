@@ -1,5 +1,9 @@
 var twitter = require('../statics/twitterAPI_KEY');
 var watson = require('../statics/watsonAPI_KEY');
+var swanson = require('./swansonController');
+var weather = require('./weatherController');
+var joke = require('./jokeController');
+var chuck = require('./chuckController');
 
 function botReplyInit() {
     var stream = twitter.stream('statuses/filter', { track: '@Felicia_Bot' });
@@ -21,6 +25,31 @@ function botReplyInit() {
                 console.log(err); 
                 return;
             }
+            else if (response.output.action === 'ron_swanson') {
+                swanson(tweet, username);
+            }
+            else if (response.output.action === 'weather') {
+                if (tweet.place == null) {
+                    twitter.post('statuses/update', {
+                        status: '@' + username + ' turn on your location tag so I know where you are, then ask me the weather again',
+                        in_reply_to_status_id: tweet.id_str
+                    }, function (err, response) {
+                        if (err) {
+                            console.log(err);
+                            return;
+                        }
+                    });
+                }
+                else{
+                    weather(tweet, username);
+                }
+            }
+            else if (response.output.action === 'joke') {
+                joke(tweet, username);
+            }
+            else if (response.output.action === 'chuck') {
+                chuck(tweet, username);
+            }
             else {
                 var result = '@' + username + ' ' + response.output.text[0];
 
@@ -33,7 +62,7 @@ function botReplyInit() {
                         return;
                     }
                     else {
-                        console.log('I posted ' + result)
+                        console.log('I posted ' + result);
                     }
                 });
             }
