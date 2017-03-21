@@ -5,7 +5,7 @@ var weather = require('./weatherController');
 var joke = require('./jokeController');
 var chuck = require('./chuckController');
 
-function botReplyInit() {
+module.exports = function botReplyInit() {
     var stream = twitter.stream('statuses/filter', { track: '@Felicia_Bot' });
 
     stream.on('tweet', function(tweet) {
@@ -69,5 +69,3 @@ function botReplyInit() {
         }
     })
 }
-
-botReplyInit();
