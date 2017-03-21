@@ -1,5 +1,5 @@
 # What this is:
-A simple twitter bot that automatically retweets memes, engages in casual conversations and occasionally tweets sassy tweets @POTUS that either runs on a server or locally.
+A simple twitter bot that automatically retweets memes, engages in casual conversations and occasionally tweets sassy tweets @realDonaldTrump that either runs on a server or locally.
 
 # What you'll need:
 1. A twitter account
