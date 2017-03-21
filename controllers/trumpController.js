@@ -13,7 +13,7 @@ module.exports = function tweetToTrump() {
                 var data = JSON.parse(body).message;
                 var result = '@realDonaldTrump ' + data + ' - Donald Trump';
 
-                if(result.length < 120) {
+                if(result.length < 140 === true) {
                     twitter.post('statuses/update', {status: result}, function(err, res) {
                         if(err) {
                             console.log(err);
@@ -39,7 +39,7 @@ module.exports = function tweetToTrump() {
                 var data = JSON.parse(body).message;
                 var result = '@realDonaldTrump ' + data + ' - Donald Trump';
 
-                if(result.length < 120) {
+                if(result.length < 140 === true) {
                     twitter.post('statuses/update', {status: result}, function(err, res) {
                         if(err) {
                             console.log(err);
@@ -57,5 +57,5 @@ module.exports = function tweetToTrump() {
         });
     }
 
-    setInterval(tweetToTrump, 60*60*1000)
+    setInterval(tweetToTrump, 3*60*60*1000)
 }
