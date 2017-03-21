@@ -1,5 +1,3 @@
 node_modules
 .vscode
-statics/twitterAPI_KEY.js
-statics/watsonAPI_KEY.js
 test.js
