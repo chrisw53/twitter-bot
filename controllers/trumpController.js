@@ -57,5 +57,5 @@ module.exports = function tweetToTrump() {
         });
     }
 
-    setInterval(tweetToTrump, 3*60*60*1000)
+    setInterval(tweetToTrump, 24*60*60*1000)
 }
