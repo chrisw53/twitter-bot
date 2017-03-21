@@ -6,7 +6,7 @@ A simple twitter bot that automatically retweets memes, engages in casual conver
 2. NPM
 3. Node JS
 
-# How to install locally: 
+# How to deploy locally: 
 1. Download the source code and run `npm install` to grab the dependencies
 2. Register a twitter account with a mobile number and proceed to apps.twitter.com
 3. Create a new app, generate a pair of access token and secret.
@@ -15,7 +15,7 @@ A simple twitter bot that automatically retweets memes, engages in casual conver
 5. You can add, delete or change the search query by customizing the queryArr array in query under the statics folder.
 6. Run `npm start` or `node app.js`, and have fun!
 
-#How to deploy via heroku:
+# How to deploy via heroku:
 1. Register a heroku account and install heroku toolbelt to be able to interact with heroku via CLI.
 2. Initiate a git repo in the project directory
 3. Run `heroku login` to log into heroku in CLI.
