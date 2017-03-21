@@ -11,7 +11,7 @@ module.exports = function tweetToTrump() {
             }
             else {
                 var data = JSON.parse(body).message;
-                var result = '@chrisbwang ' + data + ' - Donald Trump';
+                var result = '@realDonaldTrump ' + data + ' - Donald Trump';
 
                 if(result.length < 120) {
                     twitter.post('statuses/update', {status: result}, function(err, res) {
