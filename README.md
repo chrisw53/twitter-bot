@@ -1,6 +1,9 @@
 # What this is:
 A simple twitter bot that automatically retweets memes and engages in casual conversations that either runs on a server or locally.
 
+# Disclaimer:
+There is a controller module that automatically tweet to Trump from a database that has a series of his quotes. I've disabled this controller, as automatically tweeting at a specific person is against the Twitter Automation Rule. Enable this module at your own risk.
+
 # What you'll need:
 1. A twitter account
 2. NPM
