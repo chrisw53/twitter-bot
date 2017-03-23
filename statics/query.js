@@ -13,4 +13,4 @@ var queryArr = [
     '#devhumor'
 ]
 
-module.exports = queryArr[Math.floor(Math.random() * (queryArr.length + 1 ))];
+module.exports = queryArr[Math.floor(Math.random() * (queryArr.length))];
