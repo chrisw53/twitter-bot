@@ -1,7 +1,6 @@
 var queryArr = [
     '#memes',
     '#dankmemes',
-    '#funny',
     '@will_dankspeare',
     '@iFunny',
     '@9GAG',
