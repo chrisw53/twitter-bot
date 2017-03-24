@@ -4,5 +4,4 @@ var botReply = require('./controllers/replyController');
 
 console.log('bot is running...');
 
-botInit(botRetweet());
 botReply();
