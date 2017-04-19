@@ -1,7 +1,7 @@
 var request = require('request');
 var twitter = require('../statics/twitterAPI_KEY');
 
- function content() {
+module.exports = function content() {
     var randomizer = Math.floor(Math.random() * 3);
     if(randomizer === 0) {
         request('https://api.chucknorris.io/jokes/random', function(err, res, body) {
